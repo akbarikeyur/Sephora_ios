@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Medium.ttf">
+            <string>SFProDisplay-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CustomProductCVC" id="gTV-IL-0wX" customClass="CustomProductCVC" customModule="Sephora" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="180"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="180"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7dy-EB-ehO" customClass="View" customModule="Sephora" customModuleProvider="target">
+                        <rect key="frame" x="10" y="15" width="130" height="130"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tWf-tq-X0F">
+                                <rect key="frame" x="5" y="5" width="120" height="120"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mKD-rN-0Ca">
+                                <rect key="frame" x="0.0" y="0.0" width="40" height="20"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEW" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqc-sY-HiY" customClass="Label" customModule="Sephora" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="20"/>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="10"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="am"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="86P-4f-q1o"/>
+                                    <constraint firstItem="hqc-sY-HiY" firstAttribute="top" secondItem="mKD-rN-0Ca" secondAttribute="top" id="O9t-mb-pML"/>
+                                    <constraint firstAttribute="width" constant="40" id="YJJ-YP-Kne"/>
+                                    <constraint firstAttribute="trailing" secondItem="hqc-sY-HiY" secondAttribute="trailing" id="dxP-e7-o6j"/>
+                                    <constraint firstAttribute="bottom" secondItem="hqc-sY-HiY" secondAttribute="bottom" id="q0h-2M-dMZ"/>
+                                    <constraint firstItem="hqc-sY-HiY" firstAttribute="leading" secondItem="mKD-rN-0Ca" secondAttribute="leading" id="vsw-iQ-QJM"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="tWf-tq-X0F" secondAttribute="trailing" constant="5" id="1r8-nj-LAM"/>
+                            <constraint firstItem="tWf-tq-X0F" firstAttribute="top" secondItem="7dy-EB-ehO" secondAttribute="top" constant="5" id="K2J-em-id9"/>
+                            <constraint firstItem="mKD-rN-0Ca" firstAttribute="top" secondItem="7dy-EB-ehO" secondAttribute="top" id="Lyx-Au-Pvb"/>
+                            <constraint firstAttribute="bottom" secondItem="tWf-tq-X0F" secondAttribute="bottom" constant="5" id="XoO-gj-4X4"/>
+                            <constraint firstItem="tWf-tq-X0F" firstAttribute="leading" secondItem="7dy-EB-ehO" secondAttribute="leading" constant="5" id="gqy-V2-TfD"/>
+                            <constraint firstAttribute="height" constant="130" id="q1h-88-4tw"/>
+                            <constraint firstItem="mKD-rN-0Ca" firstAttribute="leading" secondItem="7dy-EB-ehO" secondAttribute="leading" id="t6w-A7-VQe"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="applyShadow" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BENIFIT" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NM1-US-d8L" customClass="Label" customModule="Sephora" customModuleProvider="target">
+                        <rect key="frame" x="10" y="150" width="130" height="14"/>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="am"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                <integer key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="7dy-EB-ehO" secondAttribute="trailing" constant="10" id="1DX-ff-zhj"/>
+                <constraint firstAttribute="trailing" secondItem="NM1-US-d8L" secondAttribute="trailing" constant="10" id="AY9-EG-UUe"/>
+                <constraint firstItem="NM1-US-d8L" firstAttribute="top" secondItem="7dy-EB-ehO" secondAttribute="bottom" constant="5" id="G5o-R7-tAq"/>
+                <constraint firstItem="7dy-EB-ehO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="Gtq-eF-i1z"/>
+                <constraint firstItem="NM1-US-d8L" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="JVb-pA-oEl"/>
+                <constraint firstItem="7dy-EB-ehO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="czo-Px-hhJ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="constraintHeightOuterView" destination="q1h-88-4tw" id="OWu-6x-IkG"/>
+                <outlet property="newView" destination="mKD-rN-0Ca" id="ig9-n9-XXe"/>
+                <outlet property="outerView" destination="7dy-EB-ehO" id="d0o-q5-z3P"/>
+                <outlet property="productImgView" destination="tWf-tq-X0F" id="yUS-Gp-T1L"/>
+                <outlet property="productNameLbl" destination="NM1-US-d8L" id="Vmp-v5-r4d"/>
+            </connections>
+            <point key="canvasLocation" x="37.681159420289859" y="34.486607142857139"/>
+        </collectionViewCell>
+    </objects>
+</document>
